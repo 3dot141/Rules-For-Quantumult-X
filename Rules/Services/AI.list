@@ -1,35 +1,35 @@
 # > OpenAI
 
 # >> OpenAI Challenge & SSO
-host-suffix,auth0.com
-host,challenges.cloudflare.com
+host-suffix,auth0.com,AI
+host,challenges.cloudflare.com,AI
 
 # >> OpenAI Related
-host-suffix,ai.com
-host-suffix,openai.com
-host-suffix,sentry.io
-host-suffix,intercom.io
-host-suffix,identrust.com
+host-suffix,ai.com,AI
+host-suffix,openai.com,AI
+host-suffix,sentry.io,AI
+host-suffix,intercom.io,AI
+host-suffix,identrust.com,AI
 
 # >> OpenAI CDN
-host-suffix,chat.openai.com.cdn.cloudflare.net
-host-suffix,openaiapi-site.azureedge.net
+host-suffix,chat.openai.com.cdn.cloudflare.net,AI
+host-suffix,openaiapi-site.azureedge.net,AI
 
 # >> OpenAI Other
-host-suffix,challenges.cloudflare.com
-host-suffix,invoice.stripe.com
-host-suffix,stripe.com
-host-suffix,poe.com
+host-suffix,challenges.cloudflare.com,AI
+host-suffix,invoice.stripe.com,AI
+host-suffix,stripe.com,AI
+host-suffix,poe.com,AI
 
 # > Claude
-host-keyword,claude
-host-keyword,anthropic
+host-keyword,claude,AI
+host-keyword,anthropic,AI
 
 # > Arc
-host,open-ai-chat-omega.vercel.app
+host,open-ai-chat-omega.vercel.app,AI
 
 # > Jetbrains
-host-suffix,aws.intellij.net
+host-suffix,aws.intellij.net,AI
 
 # > Microsoft
-host-suffix,copilot.microsoft.com
+host-suffix,copilot.microsoft.com,AI
