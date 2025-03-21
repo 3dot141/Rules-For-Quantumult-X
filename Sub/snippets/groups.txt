@@ -1,0 +1,35 @@
+# 定制内容，放第一个
+AI`select`[]香港`[]台湾`[]日本`[]美国`[]其他`(.*)`[]DIRECT
+Apple`select`[]OutSide`[]AutoTest`[]香港`[]台湾`[]日本`[]美国`[]其他`[]DIRECT
+Google`select`[]OutSide`[]AutoTest`[]香港`[]台湾`[]日本`[]美国`[]其他`[]DIRECT
+Microsoft`select`[]OutSide`[]AutoTest`[]香港`[]台湾`[]日本`[]美国`[]其他`[]DIRECT
+Cloudflare`select`[]OutSide`[]AutoTest`[]香港`[]台湾`[]日本`[]美国`[]其他`[]DIRECT
+Github`select`[]OutSide`[]AutoTest`[]香港`[]台湾`[]日本`[]美国`[]其他`[]DIRECT
+Games`select`[]OutSide`[]AutoTest`[]香港`[]台湾`[]日本`[]美国`[]其他`[]DIRECT
+
+# 通用
+OutSide`select`[]AutoTest`[]香港`[]台湾`[]日本`[]美国`[]其他`[]Domestic
+AutoTest`url-test`.*`http://www.gstatic.com/generate_204`300,5
+
+# 国内/外
+Domestic`select`[]DIRECT
+Foreign`select`[]OutSide`[]AutoTest`[]香港`[]台湾`[]日本`[]美国`[]其他`[]DIRECT
+
+# 流媒体 
+Domestic Media`select`[]DIRECT
+Foreign Media`select`[]OutSide`[]AutoTest`[]香港`[]台湾`[]日本`[]美国`[]其他`[]DIRECT
+
+# 全球拦截
+Interceptor`select`[]REJECT`[]DIRECT
+Hijacking`select`[]Interceptor`[]DIRECT
+Advertising`select`[]Interceptor`[]DIRECT
+
+# 地区分类
+香港`url-test`(香港|HK|hk|Hong Kong)`http://www.gstatic.com/generate_204`300,5
+台湾`url-test`(台湾|TW|tw|Taiwan)`http://www.gstatic.com/generate_204`300,5
+日本`url-test`(日本|JP|jp|Japan)`http://www.gstatic.com/generate_204`300,5
+美国`url-test`(美国|US|us|United States)`http://www.gstatic.com/generate_204`300,5
+其他`select`(.*)
+
+# 兜底
+Unknown`select`[]OutSide`[]AutoTest`[]香港`[]台湾`[]日本`[]美国`[]其他`[]DIRECT

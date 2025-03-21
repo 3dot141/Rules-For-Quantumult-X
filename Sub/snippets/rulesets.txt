@@ -1,0 +1,35 @@
+# --- 定制规则 ---
+AI,quanx:https://raw.githubusercontent.com/3dot141/Rules-For-Quantumult-X/refs/heads/main/Rules/Services/AI.list
+Google,quanx:https://raw.githubusercontent.com/3dot141/Rules-For-Quantumult-X/refs/heads/main/Rules/Services/Google.list
+Microsoft,quanx:https://raw.githubusercontent.com/3dot141/Rules-For-Quantumult-X/refs/heads/main/Rules/Services/Microsoft.list
+Cloudflare,quanx:https://raw.githubusercontent.com/3dot141/Rules-For-Quantumult-X/refs/heads/main/Rules/Services/Cloudflare.list
+Github,quanx:https://raw.githubusercontent.com/3dot141/Rules-For-Quantumult-X/refs/heads/main/Rules/Services/Github.list
+Games,quanx:https://raw.githubusercontent.com/3dot141/Rules-For-Quantumult-X/refs/heads/main/Rules/Games/GamesAll.list
+
+# --- 通用规则 排序 ---
+
+# 1. Advertising.list - 广告、行为分析、隐私追踪（macOS 不建议开启）
+Advertising,quanx:https://raw.githubusercontent.com/3dot141/Rules-For-Quantumult-X/refs/heads/main/Rules/Advertising/AdReject.list
+
+# 2. Hijacking.list - 劫持（运营商、臭名昭著的诈骗网站或恶意应用）
+Hijacking,quanx:https://raw.githubusercontent.com/3dot141/Rules-For-Quantumult-X/refs/heads/main/Rules/Advertising/Hijacking.list
+
+# 3. ForeignMedia.list - 国际流媒体
+Foreign Media,quanx:https://raw.githubusercontent.com/3dot141/Rules-For-Quantumult-X/refs/heads/main/Rules/Media/ForeignMedia.list
+
+# 4. DomesticMedia.list - 国内流媒体（可不加）
+# Domestic Media,quanx:https://raw.githubusercontent.com/3dot141/Rules-For-Quantumult-X/refs/heads/main/Rules/Media/DomesticMedia.list
+
+# 5. Global.list - 国际网站/应用
+OutSide,quanx:https://raw.githubusercontent.com/3dot141/Rules-For-Quantumult-X/refs/heads/main/Rules/Region/Global.list
+
+# 6. Apple.list - Apple 服务（可不加）
+Apple,quanx:https://raw.githubusercontent.com/3dot141/Rules-For-Quantumult-X/refs/heads/main/Rules/Services/Apple.list
+
+# 7. China.list - 国内网站/应用 
+Domestic,quanx:https://raw.githubusercontent.com/3dot141/Rules-For-Quantumult-X/refs/heads/main/Rules/Region/China.list
+Domestic,quanx:https://raw.githubusercontent.com/3dot141/Rules-For-Quantumult-X/refs/heads/main/Rules/Region/ChinaIP.list
+Domestic,[]GEOIP,CN
+
+# 8. 兜底
+Unknown,[]FINAL
