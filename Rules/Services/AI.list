@@ -33,3 +33,6 @@ host-suffix,aws.intellij.net,AI
 
 # > Microsoft
 host-suffix,copilot.microsoft.com,AI
+
+# > Monica
+host-suffx,monica.im,AI
