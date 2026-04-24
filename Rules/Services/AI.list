@@ -9,6 +9,7 @@ host-suffix,auth0.com,AI
 host,challenges.cloudflare.com,AI
 
 # >> OpenAI Related
+host-keyword,chatgpt,AI
 host-suffix,ai.com,AI
 host-suffix,openai.com,AI
 host-suffix,sentry.io,AI
