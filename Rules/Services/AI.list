@@ -41,3 +41,6 @@ host-suffix,copilot.microsoft.com,AI
 
 # > Monica
 host-suffix,monica.im,AI
+
+# > Groq
+host-suffix,groq.com,AI
