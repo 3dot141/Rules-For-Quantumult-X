@@ -1,7 +1,7 @@
 # 落地组(你自己的 VPS,备注统一加 LD- 前缀)
 usa-landing`url-test`(USA-miyaip)`http://www.gstatic.com/generate_204`300,5
 # 前置组
-usa-transfer`select`[]美国
+usa-transfer`select`[]美国`(美国|USA|United States|American)
 
 # 定制内容，放第一个
 AI`select`[]香港`[]台湾`[]日本`[]美国`[]其他`(.*)`[]DIRECT
