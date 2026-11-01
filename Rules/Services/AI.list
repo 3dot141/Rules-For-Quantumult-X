@@ -45,3 +45,7 @@ host-suffix,monica.im,AI
 # > Grok
 host-suffix,x.ai,AI
 host-keyword,grok,AI
+
+# > Groq
+host-suffix,groq.com,AI
+host-suffix,groqproxy.com,AI
