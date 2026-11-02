@@ -13,10 +13,18 @@ dns:
 {% if local.clash.new_field_name == "true" %}
 proxies: ~
 proxy-groups: ~
-rules: 
+rules:
+  # 进程规则（跨平台正则，需 TUN 模式；Windows 进程名带 .exe）
+  - PROCESS-NAME-REGEX,(?i)(clash|mihomo|v2ray|xray|ss-local|sing-box)(\.exe)?,DIRECT
+  - PROCESS-NAME-REGEX,(?i)(tailscale|tailscaled)(\.exe)?,DIRECT
+  - PROCESS-NAME-REGEX,(?i)(wechat|weixin|wechatappex|qq|tim|wecom|wxwork|dingtalk|lark|feishu|企业微信)(\.exe)?,DIRECT
+  - PROCESS-NAME-REGEX,(?i)(wemeetapp|tencentmeeting|voov)(\.exe)?,DIRECT
+  - PROCESS-NAME-REGEX,(?i)(neteasemusic|cloudmusic|qqmusic)(\.exe)?,DIRECT
+  - PROCESS-NAME-REGEX,(?i)(bilibili|哔哩哔哩|iqiyi|youku)(\.exe)?,DIRECT
+  - PROCESS-NAME-REGEX,(?i)(baidunetdisk|adrive|quarkclouddrive|thunder|qbittorrent|aria2c|transmission|utorrent|bitcomet)(\.exe)?,DIRECT
+  - PROCESS-NAME-REGEX,(?i)(wps|tencentdocs|meituan)(\.exe)?,DIRECT
+  - PROCESS-NAME-REGEX,(?i)(todesk|sunloginclient)(\.exe)?,DIRECT
   - PROCESS-NAME,steam.exe,Games
-  - PROCESS-NAME,tailscaled.exe,DIRECT
-  - PROCESS-NAME,tailscale.exe,DIRECT
 {% else %}
 Proxy: ~
 Proxy Group: ~
