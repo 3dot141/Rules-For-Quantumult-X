@@ -3,11 +3,8 @@
 # 前置组
 # usa-transfer`select`[]美国`(美国|USA|United States|American)
 
-# 日本家宽落地（前置与 dialer-proxy 见 my.ini 的 chain=AI-Chain）
-Miyaip-JP`select`(日本-东京-miyaip)
-
 # 定制内容，放第一个
-AI`select`[]Miyaip-JP`[]新加坡`[]香港`[]台湾`[]日本`[]美国`[]其他`(.*)`[]DIRECT
+AI`select`[]AI-Chain`[]新加坡`[]香港`[]台湾`[]日本`[]美国`[]其他`(.*)`[]DIRECT
 Apple`select`[]OutSide`[]AutoTest`[]香港`[]台湾`[]日本`[]美国`[]新加坡`[]其他`[]DIRECT
 Google`select`[]OutSide`[]AutoTest`[]香港`[]台湾`[]日本`[]美国`[]新加坡`[]其他`[]DIRECT
 Microsoft`select`[]OutSide`[]AutoTest`[]香港`[]台湾`[]日本`[]美国`[]新加坡`[]其他`[]DIRECT
