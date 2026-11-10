@@ -5,10 +5,37 @@ allow-lan: {{ default(global.clash.allow_lan, "true") }}
 mode: Rule
 log-level: {{ default(global.clash.log_level, "info") }}
 external-controller: :9090
-{% if default(request.clash.dns, "") == "1" %}
+{% if default(request.clash.dns, "1") == "1" %}
 dns:
   enable: true
+  ipv6: false
   listen: :1053
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/15
+  fake-ip-filter:
+    - 'geosite:private'
+    - 'geosite:category-ntp'
+    - 'geosite:geolocation-cn'
+    - 'geosite:connectivity-check'
+    - '+.lan'
+    - '+.local'
+    - '*.msftconnecttest.com'
+    - '*.msftncsi.com'
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+  nameserver-policy:
+    'geosite:cn':
+      - https://dns.alidns.com/dns-query
+      - 119.29.29.29
+    'geosite:private': system
+  proxy-server-nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+  respect-rules: true
 {% endif %}
 {% if local.clash.new_field_name == "true" %}
 proxies: ~
