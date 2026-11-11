@@ -51,6 +51,10 @@ rules:
   - PROCESS-NAME-REGEX,(?i)(baidunetdisk|adrive|quarkclouddrive|thunder|qbittorrent|aria2c|transmission|utorrent|bitcomet)(\.exe)?,DIRECT
   - PROCESS-NAME-REGEX,(?i)(wps|tencentdocs|meituan)(\.exe)?,DIRECT
   - PROCESS-NAME-REGEX,(?i)(todesk|sunloginclient)(\.exe)?,DIRECT
+  # AI 应用 → AI 组（需 TUN + find-process-mode: always）
+  - PROCESS-NAME-REGEX,(?i)^(cursor|claude|chatgpt|codex|grok)([ -].*)?(\.exe)?$,AI
+  # npm 安装的 CLI 走 node，按安装路径兜底
+  - PROCESS-PATH-REGEX,(?i)(anthropic-ai|claude-code|@openai[/\\]codex),AI
   - PROCESS-NAME,steam.exe,Games
 {% else %}
 Proxy: ~

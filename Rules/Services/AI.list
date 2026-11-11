@@ -9,7 +9,6 @@ host-suffix,auth0.com,AI
 host,challenges.cloudflare.com,AI
 
 # >> OpenAI Related
-host-keyword,chatgpt,AI
 host-suffix,ai.com,AI
 host-suffix,openai.com,AI
 host-suffix,sentry.io,AI
@@ -27,7 +26,6 @@ host-suffix,stripe.com,AI
 host-suffix,poe.com,AI
 
 # > Claude
-host-keyword,claude,AI
 host-keyword,anthropic,AI
 
 # > Arc
@@ -44,8 +42,28 @@ host-suffix,monica.im,AI
 
 # > Grok
 host-suffix,x.ai,AI
-host-keyword,grok,AI
 
 # > Groq
 host-suffix,groq.com,AI
 host-suffix,groqproxy.com,AI
+
+# > Cursor
+host-suffix,cursor.com,AI
+host-suffix,cursor.sh,AI
+host-suffix,cursorapi.com,AI
+host-suffix,cursor-cdn.com,AI
+
+# > Claude / Anthropic
+host-suffix,anthropic.com,AI
+host-suffix,claude.ai,AI
+host-suffix,claude.com,AI
+host-suffix,claudeusercontent.com,AI
+
+# > OpenAI / Codex
+host-suffix,chatgpt.com,AI
+host-suffix,oaistatic.com,AI
+host-suffix,oaiusercontent.com,AI
+
+# > Grok / xAI
+host-suffix,grok.com,AI
+host-suffix,grokusercontent.com,AI
