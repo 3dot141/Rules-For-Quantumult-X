@@ -26,7 +26,6 @@ host-suffix,stripe.com,AI
 host-suffix,poe.com,AI
 
 # > Claude
-host-keyword,anthropic,AI
 
 # > Arc
 host,open-ai-chat-omega.vercel.app,AI
